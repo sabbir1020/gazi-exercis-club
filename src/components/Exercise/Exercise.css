@@ -1,0 +1,8 @@
+.exercise-container img{
+   width: 100%;
+   height: 200px;
+}
+.exercise-container{
+    height: 350px;
+    border: 1px solid silver;
+}
