@@ -9,6 +9,9 @@ const Exercises = () => {
       .then((res) => res.json())
       .then((data) => setExercises(data));
   }, []);
+  const handleAddToCart = (exercises) => {
+    console.log(exercises);
+  };
   return (
     <div>
       <h1> Gazi Exercise club</h1>
@@ -16,7 +19,11 @@ const Exercises = () => {
       <div className="exercises-container">
         <div className="exercises">
           {exercises.map((exercise) => (
-            <Exercise key={exercise._id} exercise={exercise}></Exercise>
+            <Exercise
+              key={exercise._id}
+              exercise={exercise}
+              handleAddToCart={handleAddToCart}
+            ></Exercise>
           ))}
         </div>
         <div className="cart-container"> Add To Cart </div>
