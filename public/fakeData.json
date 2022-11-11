@@ -2,7 +2,7 @@
     {
       "_id": "636e52d04d71ebd10b6a992e",
       "picture": "https://i.ibb.co/QFTPD0d/alexander-redl-d3b-Ymn-Z0ank-unsplash.jpg ",
-      "time": "48s",
+      "time": 48,
       "name": "Ophelia Benson",
       "gender": "female",
       "email": "opheliabenson@exostream.com",
@@ -11,7 +11,7 @@
     {
       "_id": "636e52d0bea209849729b32b",
       "picture": "https://i.ibb.co/j5xpVhd/scott-webb-U5k-Qvb-QWo-G0-unsplash.jpg",
-      "time": "44s",
+      "time": 44,
       "name": "Hawkins Cummings",
       "gender": "male",
       "email": "hawkinscummings@exostream.com",
@@ -20,7 +20,7 @@
     {
       "_id": "636e52d01bdba43c5810cef7",
       "picture": "https://i.ibb.co/FJXj5Xy/boxed-water-is-better-P4-AIj-Qw1-Bu-Y-unsplash.jpg",
-      "time": "34s",
+      "time": 34,
       "name": "French Ramirez",
       "gender": "male",
       "email": "frenchramirez@exostream.com",
@@ -29,7 +29,7 @@
     {
       "_id": "636e52d02affc1edab2480ce",
       "picture": "https://i.ibb.co/qrKFgZV/alora-griffiths-Tuzrz-Arccvc-unsplash.jpg",
-      "time": "47s",
+      "time": 47,
       "name": "Lila Flores",
       "gender": "female",
       "email": "lilaflores@exostream.com",
@@ -38,7 +38,7 @@
     {
       "_id": "636e52d0e4bfbeca3bf25c95",
       "picture": "https://i.ibb.co/FJXj5Xy/boxed-water-is-better-P4-AIj-Qw1-Bu-Y-unsplash.jpg",
-      "time": "36s",
+      "time": 36,
       "name": "Priscilla Solomon",
       "gender": "female",
       "email": "priscillasolomon@exostream.com",
@@ -47,7 +47,7 @@
     {
       "_id": "636e52d00bc4ee47cddc547c",
       "picture": "https://i.ibb.co/QFTPD0d/alexander-redl-d3b-Ymn-Z0ank-unsplash.jpg",
-      "time": "38s",
+      "time": 38,
       "name": "Vance Raymond",
       "gender": "male",
       "email": "vanceraymond@exostream.com",
