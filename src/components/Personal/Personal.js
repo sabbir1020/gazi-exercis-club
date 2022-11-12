@@ -5,8 +5,7 @@ const Personal = () => {
   const personalInfo = {
     _id: "636e52d04d71ebd10b6a992e",
     name: "Gazi sabbir ahammed",
-    picture:
-      "https://i.ibb.co/QFTPD0d/alexander-redl-d3b-Ymn-Z0ank-unsplash.jpg ",
+    picture: "https://i.ibb.co/tBLkrCY/sabbir-fb.jpg ",
     weigth: 48,
     height: 6.3,
     age: 23,
