@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./Exercise.css";
 
 const Exercise = (props) => {
@@ -15,7 +16,7 @@ const Exercise = (props) => {
         onClick={() => props.handleAddToCart(props.exercise)}
         className="btn-cart"
       >
-        Add to list{" "}
+        Add to list
       </button>
     </div>
   );
