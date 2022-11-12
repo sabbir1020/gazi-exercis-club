@@ -38,6 +38,7 @@ const Exercises = () => {
         </div>
         <div className="cart-container">
           <Personal></Personal>
+
           <h2>Add To Cart</h2>
           <h4>Click To Tatal cart : {carts.length}</h4>
           <Cart carts={carts}></Cart>

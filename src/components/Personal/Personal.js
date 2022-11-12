@@ -16,10 +16,31 @@ const Personal = () => {
   };
 
   return (
-    <div className="personal">
-      {/* <img src={personalInfo.picture} alt="" /> */}
-      <h2>{personalInfo.name}</h2>
-      <h4>weigth {personalInfo.weigth}</h4>
+    <div className="">
+      <div className="personal">
+        <img src={personalInfo.picture} alt="" />
+        <h5>{personalInfo.name}</h5>
+      </div>
+      <div className="peroson-body">
+        <div>
+          <h2>
+            {personalInfo.weigth}
+            <span>kg</span>
+          </h2>
+          <h4>Weigth</h4>
+        </div>
+        <div>
+          <h2>{personalInfo.height} </h2>
+          <h4>Height</h4>
+        </div>
+        <div>
+          <h2>
+            {personalInfo.weigth}
+            <span>yrs</span>
+          </h2>
+          <h4>Age</h4>
+        </div>
+      </div>
     </div>
   );
 };

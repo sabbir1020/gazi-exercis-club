@@ -13,3 +13,7 @@
     border:  2px solid royalblue;
     padding: 10px;
 }
+.break-time{
+    display: flex;
+   justify-content: space-around;
+}
