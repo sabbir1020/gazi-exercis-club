@@ -1,15 +1,17 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { addToCart } from "../unitity/Fakedb";
 import "./Cart.css";
-
 const Cart = ({ carts }) => {
   // console.log(carts);
   const [cart, setCart] = useState([10]);
+
   const clickHandle = (time) => {
     setCart(time);
     addToCart(time);
   };
-
+  const notify = () => toast("Wow so easy!");
   const totalTime = carts.reduce(
     (previousValue, currentValue) => previousValue + currentValue.time,
     0
@@ -26,7 +28,8 @@ const Cart = ({ carts }) => {
       <div className="cart-container">
         <h3>time: {totalTime}s</h3>
         <h3>Break Time: {cart} </h3>
-        <button>Activity completed</button>
+        <button onClick={() => notify()}>Activity Completed</button>
+        <ToastContainer />
       </div>
     </div>
   );
