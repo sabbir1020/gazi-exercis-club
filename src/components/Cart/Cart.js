@@ -11,7 +11,7 @@ const Cart = ({ carts }) => {
     setCart(time);
     addToCart(time);
   };
-  const notify = () => toast("Wow so easy!");
+  const notify = () => toast.success("Wow so easy!");
   const totalTime = carts.reduce(
     (previousValue, currentValue) => previousValue + currentValue.time,
     0
