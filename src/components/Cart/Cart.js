@@ -27,8 +27,8 @@ const Cart = ({ carts }) => {
       </div>
       <div className="cart-container">
         <h3>Exercise Details</h3>
-        <h4>Exercise time: {totalTime}s</h4>
-        <h4>Break Time: {cart} </h4>
+        <h5>Exercise time: {totalTime} sec</h5>
+        <h5>Break Time: {cart} sec </h5>
         <button onClick={() => notify()} className="btn-button">
           Activity Completed
         </button>
