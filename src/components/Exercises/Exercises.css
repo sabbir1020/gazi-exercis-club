@@ -10,11 +10,21 @@
 }
 .exercises-text{
     text-align: center;
-  
+    display: flex;
+    justify-content: center;
+   
+}
+.exercises-text>h1{
+    margin: 10px;
 }
 .cart-container{
     margin-left: 20px;
     padding: 10px;
+}
+.exercises-text>img{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
 }
 .break-time{
     display: flex;

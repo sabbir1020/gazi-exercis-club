@@ -1,3 +1,4 @@
+import logo from "../images/dumbbell.png";
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Exercise from "../Exercise/Exercise";
@@ -25,9 +26,10 @@ const Exercises = () => {
   return (
     <div>
       <div className="exercises-text">
+        <img src={logo} alt="" />
         <h1> Gazi Exercise club</h1>
-        <h3>Select Today's Exercise</h3>
       </div>
+      <h3>Select Today's Exercise</h3>
 
       <div className="exercises-container">
         <div className="exercises">
