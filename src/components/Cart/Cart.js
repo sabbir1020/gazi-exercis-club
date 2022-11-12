@@ -11,24 +11,27 @@ const Cart = ({ carts }) => {
     setCart(time);
     addToCart(time);
   };
-  const notify = () => toast.success("Wow so easy!");
+  const notify = () => toast.success("Wow Activity Completed!");
   const totalTime = carts.reduce(
     (previousValue, currentValue) => previousValue + currentValue.time,
     0
   );
   // console.log(typeof totalTime);
   return (
-    <div>
-      <div>
+    <div className="">
+      <div className="click-button">
         <button onClick={() => clickHandle(10)}>10s</button>
         <button onClick={() => clickHandle(20)}>20s</button>
         <button onClick={() => clickHandle(30)}>30s</button>
         <button onClick={() => clickHandle(40)}>40s</button>
       </div>
       <div className="cart-container">
-        <h3>time: {totalTime}s</h3>
-        <h3>Break Time: {cart} </h3>
-        <button onClick={() => notify()}>Activity Completed</button>
+        <h3>Exercise Details</h3>
+        <h4>Exercise time: {totalTime}s</h4>
+        <h4>Break Time: {cart} </h4>
+        <button onClick={() => notify()} className="btn-button">
+          Activity Completed
+        </button>
         <ToastContainer />
       </div>
     </div>

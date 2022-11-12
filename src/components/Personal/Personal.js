@@ -16,7 +16,7 @@ const Personal = () => {
   };
 
   return (
-    <div className="">
+    <div className="personal-container">
       <div className="personal">
         <img src={personalInfo.picture} alt="" />
         <h5>{personalInfo.name}</h5>

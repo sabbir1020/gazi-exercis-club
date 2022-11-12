@@ -2,18 +2,20 @@ import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Exercise from "../Exercise/Exercise";
 import Personal from "../Personal/Personal";
-
 import "./Exercises.css";
 
 const Exercises = () => {
   const [exercises, setExercises] = useState([]);
   const [carts, setCarts] = useState([]);
 
+  // fakadata load in json files
   useEffect(() => {
     fetch("/fakeData.json")
       .then((res) => res.json())
       .then((data) => setExercises(data));
   }, []);
+
+  // button click handleAddToCart
   const handleAddToCart = (exercise) => {
     const newCarts = [...carts, exercise];
     setCarts(newCarts);
@@ -22,10 +24,11 @@ const Exercises = () => {
 
   return (
     <div>
-      <div>
+      <div className="exercises-text">
         <h1> Gazi Exercise club</h1>
+        <h3>Select Today's Exercise</h3>
       </div>
-      <h3>Select Today's Exercise</h3>
+
       <div className="exercises-container">
         <div className="exercises">
           {exercises.map((exercise) => (
@@ -38,9 +41,7 @@ const Exercises = () => {
         </div>
         <div className="cart-container">
           <Personal></Personal>
-
-          <h2>Add To Cart</h2>
-          <h4>Click To Tatal cart : {carts.length}</h4>
+          <h3>Add A Break</h3>
           <Cart carts={carts}></Cart>
         </div>
       </div>

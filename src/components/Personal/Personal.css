@@ -1,5 +1,9 @@
+.personal-container{
+   background-color: burlywood;
+    border-radius: 5px;
+}
+
 .personal{
-    border: 2px solid tomato;
     display: flex;
     /* justify-items: center; */
     justify-content: space-around;
@@ -17,11 +21,11 @@
     display: flex;
     justify-content: space-around;
     justify-items: center;
-    background-color: antiquewhite;
+
     border-radius: 5px;
     margin-top: 10px;
 }
 .peroson-body h2 span{
     font-size: 15px;
-    color: red;
+    
 }
