@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { addToCart } from "../unitity/Fakedb";
 import "./Cart.css";
 
 const Cart = ({ carts }) => {
@@ -6,6 +7,7 @@ const Cart = ({ carts }) => {
   const [cart, setCart] = useState([10]);
   const clickHandle = (time) => {
     setCart(time);
+    addToCart(time);
   };
 
   const totalTime = carts.reduce(
@@ -24,6 +26,7 @@ const Cart = ({ carts }) => {
       <div className="cart-container">
         <h3>time: {totalTime}s</h3>
         <h3>Break Time: {cart} </h3>
+        <button>Activity completed</button>
       </div>
     </div>
   );
